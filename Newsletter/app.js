@@ -39,10 +39,10 @@ app.post("/", function (req, res) {
     var jsonData = JSON.stringify(data);
 
     var options = {
-        url: "https://usx.api.mailchimp.com/3.0/lists/xxxxxxx",
+        url: "https://us{server-number}.api.mailchimp.com/3.0/lists/{list-id}",
         method: "POST",
         headers: {
-            "Authorization": "xxxx xxxxxxx-usxxxxxxx" //Your name and ypur API KEY
+            "Authorization": "{name} {API-key}" //Your name and ypur API KEY
         },
         body: jsonData
     };
